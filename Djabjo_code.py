@@ -11,7 +11,7 @@ class Handsome_Lox_Files:
         
         
         for friend in self.list_frinds: # запускает цикл создания файлов.
-            with open(f'C:\\Users\\vovak\\OneDrive\Рабочий стол\\{friend}.txt', 'w', encoding='utf-8') as file:
+            with open(f'{friend}.txt', 'w', encoding='utf-8') as file:
                 if friend in self.List_lox:             # условия при котором frinds попадает в тот или иной список в зависимости есть ли он в списке лохов или нет 
                     file.write(f'{friend} ЛОХ')
                     self.ratio_Lox.append(friend)
